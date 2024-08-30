@@ -1,0 +1,388 @@
+:root {
+  --principal: #c7e619;
+  --primario: #0a0a0a;
+  --secundario: #eeeeee;
+  --gris: #808080;
+  --grisClaro: #b9b9b9;
+  --fuentePrincipal: "roboto", sans-serif;
+}
+/* css global */
+html {
+  font-size: 62.5%; /* 1rem = 10px */
+  box-sizing: border-box;
+}
+svg {
+  color: var(--principal);
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+h1 {
+  font-size: 5rem;
+  color: var(--secundario);
+}
+
+h1 span {
+  font-size: 3.8rem;
+}
+
+h2 {
+  font-size: 3.8rem;
+}
+
+h3 {
+  font-size: 2.8rem;
+}
+
+h1,
+h2,
+h3 {
+  text-align: center;
+}
+
+a {
+  text-decoration: none;
+}
+
+body {
+  font-size: 1.6rem;
+  background-image: linear-gradient(
+    to bottom,
+    var(--gris) 0%,
+    var(--grisClaro) 100%
+  );
+  min-height: 93rem;
+  margin: 0 0;
+}
+
+.btnMenu{
+border:none;
+background-color: var(--secundario);
+}
+
+
+.btnMenu{
+  display: none;
+}
+
+
+
+
+
+
+
+.bg-nav {
+  background-color: var(--primario);
+}
+.navbar {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.navbar a {
+  font-size: 2rem;
+  color: var(--secundario);
+  padding: 1rem;
+  font-weight: bold;
+}
+
+.no_navbar{
+  display: none;
+}
+
+
+.navbar a:hover {
+  background-color: var(--gris);
+  font-size: 2.2rem;
+}
+.navredes a{
+  font-size: 2rem;
+  color: var(--secundario);
+  padding: 1rem;
+  font-weight: bold;
+}
+
+.hero {
+  background-image: url("../img/sentado.avif");
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 60rem;
+  position: relative;
+}
+
+.contenido_hero {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: rgb(0 0 0 / 60%);
+}
+
+.ubicacion {
+  display: flex;
+}
+
+.ubicacion p {
+  color: var(--secundario);
+  font-size: 2rem;
+}
+.btncontactar {
+  color: var(--secundario);
+  background-color: rgba(171, 233, 153, 0.6);
+  padding: 1rem;
+  text-transform: uppercase;
+  border-radius: 1rem;
+  font-size: 2.2rem;
+  margin-top: 5rem;
+  font-weight: bold;
+}
+
+.btncontactar:hover {
+  transform: scale(1.1);
+  background-color: rgb(15, 133, 15);
+  border: 0.5rem;
+}
+
+/*estilos del contenedor*/
+
+.container {
+  background-color: var(--secundario);
+  width: 120rem;
+  margin: 0 auto;
+  border-radius: 1rem;
+}
+
+.habilidades {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  padding: 2rem;
+  column-gap: 2rem;
+}
+
+.habilidad {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.icono {
+  display: flex;
+  background-color: var(--gris);
+  height: 15rem;
+  width: 15rem;
+  border-radius: 50%;
+  align-items: center;
+  justify-content: center;
+}
+
+.habilidad h3 {
+  color: var(--principal);
+}
+.footer {
+  text-align: center;
+  color: var(--secundario);
+}
+.icono svg {
+  width: 10rem;
+  height: auto;
+}
+.text {
+  background-color: blanchedalmond;
+  color: black;
+  padding: 4rem;
+}
+
+.container h1 {
+  color: white;
+  background-color: #b9b9b9;
+  background-image: linear-gradient(
+      135deg,
+      rgb(222, 129, 25) 0%,
+      rgb(222, 129, 25) 10%,
+      rgb(201, 113, 31) 10%,
+      rgb(201, 113, 31) 23%,
+      rgb(181, 97, 38) 23%,
+      rgb(181, 97, 38) 26%,
+      rgb(160, 82, 44) 26%,
+      rgb(160, 82, 44) 27%,
+      rgb(139, 66, 50) 27%,
+      rgb(139, 66, 50) 38%,
+      rgb(119, 50, 57) 38%,
+      rgb(119, 50, 57) 54%,
+      rgb(98, 34, 63) 54%,
+      rgb(98, 34, 63) 100%
+    ),
+    linear-gradient(
+      45deg,
+      rgb(222, 129, 25) 0%,
+      rgb(222, 129, 25) 10%,
+      rgb(201, 113, 31) 10%,
+      rgb(201, 113, 31) 23%,
+      rgb(181, 97, 38) 23%,
+      rgb(181, 97, 38) 26%,
+      rgb(160, 82, 44) 26%,
+      rgb(160, 82, 44) 27%,
+      rgb(139, 66, 50) 27%,
+      
+      rgb(139, 66, 50) 38%,
+      rgb(119, 50, 57) 38%,
+      rgb(119, 50, 57) 54%,
+      rgb(98, 34, 63) 54%,
+      rgb(98, 34, 63) 100%
+    ),
+    linear-gradient(
+      0deg,
+      rgb(222, 129, 25) 0%,
+      rgb(222, 129, 25) 10%,
+      rgb(201, 113, 31) 10%,
+      rgb(201, 113, 31) 23%,
+      rgb(181, 97, 38) 23%,
+      rgb(181, 97, 38) 26%,
+      rgb(160, 82, 44) 26%,
+      rgb(160, 82, 44) 27%,
+      rgb(139, 66, 50) 27%,
+      rgb(139, 66, 50) 38%,
+      rgb(119, 50, 57) 38%,
+      rgb(119, 50, 57) 54%,
+      rgb(98, 34, 63) 54%,
+      rgb(98, 34, 63) 100%
+    ),
+    linear-gradient(90deg, rgb(151, 190, 171), rgb(250, 185, 29));
+  background-blend-mode: overlay, overlay, overlay, normal;
+  width: rem;
+  height: auto;
+  border-radius: 100%;
+}
+
+.text h2 {
+  color: var(--gris);
+}
+
+.bb {
+  color: var(--grisClaro);
+  display: auto;
+}
+
+.parrafo {
+  display: flex;
+}
+
+.parrafo img {
+  width: 30rem;
+  height: 30rem;
+  border-radius: 2rem;
+  margin-left: 5rem;
+}
+
+.nn {
+  color: var(--primario);
+}
+
+/* estilos pagina proyectos */
+
+.proyectos{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  column-gap: 5rem;
+}
+
+.proyecto1{
+  display: flex;
+  flex-direction: column;
+}
+
+.tumis img{
+  width: 70%;
+  height: 40px; ;
+}
+
+
+.proyecto1:hover{
+  background-color: aqua;
+  border: 0.5rem;
+}
+
+/* estilos conctato*/
+
+.formulario{
+  background-color: burlywood;
+  width: 60rem;
+  margin: 0 auto;
+  padding: 2rem;
+}
+
+.campos{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.campo{
+  display: grid;
+  grid-template-columns: 1fr 4fr;
+  width: 100%;
+  column-gap: 1rem;
+  margin-top: 1rem;
+}
+
+
+.formulario fieldset{
+  border: none;
+  text-align: end;
+width: 95%;
+}
+
+.formulario legend{
+font-size: 2.4rem;
+text-align: center;
+text-transform: uppercase;
+padding: 1rem;
+color: var(--primario);
+font-weight: bold;
+}
+
+.campo input{
+  width: 100%;
+  padding: 1rem;
+  border-radius: .5rem;
+  border: none;
+}
+
+.campo textarea{
+  height: 50rem;
+  max-width: 50rem;
+
+
+}
+
+.campo input, .campo textarea{
+  border-radius: .5rem;
+  
+  border: none;
+}
+
+.campo label {
+font-size: 2rem;
+}
+
+.btn{
+  margin-top: 4rem;
+  background-color: var(--principal);
+  font-size: 2rem;
+  border-radius: 1rem;
+  padding: 1rem;
+  border: none;
+  text-transform:uppercase;
+font-weight: bold;
+text-align: end;
+}
+
+
