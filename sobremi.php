@@ -1,24 +1,8 @@
-<!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
-    <link
-      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
-      rel="stylesheet"
-    />
-    <link rel="stylesheet" href="./css/style.css" />
-  </head>
-  <body>
-    <div class="bg-nav">
-      <nav>
-        <a href="index.html">Inicio</a>
-        <a href="sobremi.html">Sobre mi </a>
-        <a href="proyectos.html">Proyectos</a>
-        <a href="conctato.html">conctato</a>
-      </nav>
-    </div>
+<?php
+require "include/header.php"
+?>
+
+
 
     <main class="container">
       <h1>QUIEN ES BRAYAN HERNANDEZ</h1>
@@ -81,8 +65,8 @@
         <img src="/img/gym.avif" alt="" />
       </div>
     </main>
-    <footer class="footer">
-      <p>todos los derechos reservados Brayan Hernandez &copy; 2024</p>
-    </footer>
-  </body>
-</html>
+   
+
+
+    <?php 
+    include 'include/footer.php';

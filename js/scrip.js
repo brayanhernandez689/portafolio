@@ -1,4 +1,5 @@
-document.getElementById("btnMenu").addEventListener("click", function() {
+document.getElementById("btnMenu").addEventListener("click",
+  function () {
     let elemento = document.getElementById("navbar");
     if (elemento.classList.contains("navbar")) {
       elemento.classList.remove("navbar");
@@ -7,7 +8,9 @@ document.getElementById("btnMenu").addEventListener("click", function() {
       elemento.classList.remove("no_navbar");
       elemento.classList.add("navbar");
     }
+
   });
+  
   
   const nombre = document.querySelector("#nombre");
   const telefono = document.querySelector("#tel");
@@ -16,17 +19,20 @@ document.getElementById("btnMenu").addEventListener("click", function() {
   const formulario = document.querySelector(".formulario");
   formulario.addEventListener("submit", validarFormulario);
   
-  mensaje.style.backgroundColor = "red";
+  mensaje.style.backgroundColor = "aqua";
   
   function validarFormulario(e) {
     e.preventDefault();
-    if (nombre.value === "" || telefono.value === "" || mensaje.value === "" || correo.value === "") {
+    if (nombre.value === "" || tel.value === "" || men.value === "" || email.value === "") {
       mostrarErrores("Todos los campos son obligatorios");
       return;
     }
+
+
+  
   
     alert("Hemos recibido sus datos, pronto nos pondremos en contacto");
-    window.location.reload();
+    e.target.submit();
   }
   
   function mostrarErrores(mensaje) {
